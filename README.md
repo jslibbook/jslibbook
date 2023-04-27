@@ -127,10 +127,15 @@ export default clone 和 export function clone 缺失测试覆盖率就为 0 了
 
 用 Puppeteer 来自动化测试户
 [Puppeteer 使用指南 - 在 Node.js 下模拟浏览器](https://www.zhihu.com/tardis/bd/art/622256649)
+
 [自研前端性能监控平台之 Puppeteer 篇](https://zhuanlan.zhihu.com/p/523035204)
+
 [自研前端性能监控平台之 Lighthouse 篇](https://zhuanlan.zhihu.com/p/471838481)
+
 [自研前端性能监控平台之 Lighthouse 定制篇](https://zhuanlan.zhihu.com/p/478877904)
+
 [puppeteer docs](https://pptr.dev/)
+
 [puppeteer github](https://github.com/puppeteer/puppeteer)
 
 ### 代码风格
@@ -165,6 +170,7 @@ a: 0,
 警告: 1 或 'warn'
 错误: 2 或 'error'
 也可以是数组，第一个字表示规则级别，后面的值是某个规则的一些参数
+[ESLint Rules 规则配置说明](https://blog.51cto.com/u_15812097/5723258)
 
 #### 文章
 
@@ -172,4 +178,5 @@ a: 0,
 
 > eslint: 提供一个插件化的 javascript 代码检测工具，他是一个检测工具，包含 js 语法以及少部分格式问题，在 eslint 看来，语法对了就能保证代码正常允许，格式问题属于其次
 > prettier: 一个“有态度”的代码格式化工具，支持多种语言
-> [全面搞懂 ESLint 与 Prettier](https://blog.csdn.net/jayccx/article/details/128851057) > [前端规范：eslint 与 prettier 使用](https://blog.csdn.net/weixin_45077178/article/details/107226551)
+> [全面搞懂 ESLint 与 Prettier](https://blog.csdn.net/jayccx/article/details/128851057)
+> [前端规范：eslint 与 prettier 使用](https://blog.csdn.net/weixin_45077178/article/details/107226551)
