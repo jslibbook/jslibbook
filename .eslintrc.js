@@ -4,6 +4,7 @@ module.exports = {
     browser: true, // 支持浏览器全局便利
     es2021: true,
     node: true,
+    mocha: true, // 解决 describe 报错问题
   },
   extends: 'eslint:recommended',
   overrides: [],
