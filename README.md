@@ -147,5 +147,20 @@ npx husky set .husky/pre-commit "npx pretty-quick --staged"
 
 #### husky
 
+读音： /ˈhʌski/
 方便实用 git 的 hook
 npx husky-init
+
+#### eslint
+
+pnpm i eslint -D
+npx eslint --init
+
+#### 文章
+
+[一文读懂 eslint 和 prettier](https://blog.csdn.net/weixin_43664308/article/details/128717523)
+
+> eslint: 提供一个插件化的 javascript 代码检测工具，他是一个检测工具，包含 js 语法以及少部分格式问题，在 eslint 看来，语法对了就能保证代码正常允许，格式问题属于其次
+> prettier: 一个“有态度”的代码格式化工具，支持多种语言
+> [全面搞懂 ESLint 与 Prettier](https://blog.csdn.net/jayccx/article/details/128851057)
+> [前端规范：eslint 与 prettier 使用](https://blog.csdn.net/weixin_45077178/article/details/107226551)
