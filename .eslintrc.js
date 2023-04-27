@@ -1,13 +1,16 @@
 module.exports = {
   env: {
-    browser: true,
+    // 设置全局变量
+    browser: true, // 支持浏览器全局便利
     es2021: true,
     node: true,
   },
   extends: 'eslint:recommended',
   overrides: [],
   parserOptions: {
-    ecmaVersion: 'latest',
+    // 希望支持的js语法
+    ecmaVersion: 'latest', // js 支持版本
+    // ecmaVersion: 6,
     sourceType: 'module',
   },
   rules: {},
