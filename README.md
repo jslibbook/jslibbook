@@ -33,8 +33,7 @@ rollup 版本: 书中是 0.57.1，项目目前使用的是最新的 3.20.6, 有�
 > 解决方案 1: @rollup/plugin-commonjs，但当前 rollup 版本不支持（要求 1.20.0）
 > [打包报错 Error: ‘default‘ is not exported](https://devpress.csdn.net/viewdesign/643769e0986c660f3cf9389c.html)
 > 解决方案 2: rollup-plugin-commonjs rollup-plugin-node-resolve（rollup@">=0.60.0 <1"）
-> [rollup 从入门到打包一个按需加载的组件库](https://zhuanlan.zhihu.com/p/486644411?utm_id=0)
-> [使用 rollup 打包 JS 的方法步骤](https://www.mianshigee.com/note/detail/63156yth/)
+> [rollup 从入门到打包一个按需加载的组件库](https://zhuanlan.zhihu.com/p/486644411?utm_id=0) > [使用 rollup 打包 JS 的方法步骤](https://www.mianshigee.com/note/detail/63156yth/)
 > rollup 提供了插件 rollup-plugin-commonjs ，以便于在 rollup 中引用 commonjs 规范的包。该插件的作用是将 commonjs 模块转成 es6 模块。
 > rollup-plugin-commonjs 通常与 rollup-plugin-node-resolve 一同使用，后者用来解析依赖的模块路径。
 > format: 'umd' 的模式下才需要
@@ -134,15 +133,19 @@ export default clone 和 export function clone 缺失测试覆盖率就为 0 了
 [puppeteer docs](https://pptr.dev/)
 [puppeteer github](https://github.com/puppeteer/puppeteer)
 
-
 ### 代码风格
+
 #### prettier
+
 格式化代码
 .prettierrc.json 配置文件
 .prettierignore 忽略文件
 
 pretty-quick --staged 只格式化待提交代码
 
+npx husky set .husky/pre-commit "npx pretty-quick --staged"
+
 #### husky
+
 方便实用 git 的 hook
 npx husky-init
