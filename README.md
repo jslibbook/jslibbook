@@ -172,6 +172,10 @@ a: 0,
 也可以是数组，第一个字表示规则级别，后面的值是某个规则的一些参数
 [ESLint Rules 规则配置说明](https://blog.51cto.com/u_15812097/5723258)
 
+#### 解决 prettier 和 eslint 规则冲突
+使用 eslint-plugin-prettier 或 eslint-config-prettier
+
+
 #### 文章
 
 [一文读懂 eslint 和 prettier](https://blog.csdn.net/weixin_43664308/article/details/128717523)
