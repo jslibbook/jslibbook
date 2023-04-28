@@ -21,9 +21,9 @@ module.exports = {
     // 'prettier/prettier': 2, // 'error', // 方案1
     'no-prototype-builtins': 0,
     'no-unused-vars': 0,
-    quotes: 2,
+    quotes: 0,
     'no-unexpected-multiline': 2,
     semi: 2,
-    indent: 4,
+    indent: ['error', 2],
   },
-}
+};

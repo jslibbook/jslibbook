@@ -227,6 +227,8 @@ eslint-plugin-prettier:
 }
 ````
 
+[indent](https://eslint.org/docs/latest/rules/indent)
+
 #### 文章
 
 [一文读懂 eslint 和 prettier](https://blog.csdn.net/weixin_43664308/article/details/128717523)
