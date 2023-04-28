@@ -39,9 +39,9 @@
   // UMD
   (function (root, factory) {
     var clone = factory(root);
-    if (typeof define === 'function' && define.amd) {
+    if (typeof globalThis?.define === 'function' && globalThis?.define.amd) {
       // AMD 模块
-      define('clone', function () {
+      globalThis?.AbortSignaldefine('clone', function () {
         return clone;
       });
     } else if (typeof exports === 'object') {

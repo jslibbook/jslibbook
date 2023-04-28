@@ -14,5 +14,8 @@ module.exports = {
     // ecmaVersion: 6,
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    'no-prototype-builtins': 0,
+    'no-unused-vars': 0,
+  },
 };

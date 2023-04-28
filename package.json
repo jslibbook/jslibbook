@@ -19,7 +19,9 @@
     "build": "npm run build:esm && npm run build:aio && npm run build:self",
     "test:auto": "node test/browser/puppeteer.js",
     "prettier": "prettier --write src/*",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "npx eslint src test",
+    "lint:fix": "npx eslint src test --fix"
   },
   "keywords": [],
   "author": "",
