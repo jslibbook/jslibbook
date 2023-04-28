@@ -23,7 +23,7 @@ module.exports = {
     'no-unused-vars': 0,
     quotes: 0,
     'no-unexpected-multiline': 2,
-    semi: 2,
+    semi: [2, 'never'],
     indent: ['error', 2],
   },
 };
