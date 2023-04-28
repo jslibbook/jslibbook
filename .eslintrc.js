@@ -22,5 +22,7 @@ module.exports = {
     'no-prototype-builtins': 0,
     'no-unused-vars': 0,
     quotes: 2,
+    'no-unexpected-multiline': 2,
+    semi: 0,
   },
-};
+}

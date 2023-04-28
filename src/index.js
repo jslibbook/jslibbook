@@ -1,5 +1,6 @@
-import { clone } from './clone';
+import { clone } from './clone'
 
-export { clone };
+export { clone }
+let aa = 'xxx'.trim().split('\n')[position].toLowerCase()
 
-const a = a ?? 1;
+const a = a ?? 1
