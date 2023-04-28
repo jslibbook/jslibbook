@@ -6,7 +6,9 @@ module.exports = {
     node: true,
     mocha: true, // 解决 describe 报错问题
   },
-  extends: 'eslint:recommended',
+  extends: ['eslint:recommended'],
+  // extends: ['eslint:recommended', 'plugin:prettier/recommended'],
+  // extends: ['eslint:recommended', 'prettier'],
   overrides: [],
   parserOptions: {
     // 希望支持的js语法

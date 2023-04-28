@@ -188,6 +188,10 @@ eslint 对 Prettier 的代码风格进行检查，如果发现不符合 Prettier
 ````json
 {
   "plugins": ["prettier"],
+  "extends": [
+    "eslint:recommended",
+    "prettier"
+  ]
   "rules": {
     "prettier/prettier": 2 // 'error',
   }
@@ -196,9 +200,9 @@ eslint 对 Prettier 的代码风格进行检查，如果发现不符合 Prettier
 ```json
 {
   extends: [
-    'eslint:recomendend',
-    'plugin:prettier/recommonended'
-  ]
+    'eslint:recommended',
+    'plugin:prettier/recommended'
+  ],
 }
 ````
 
