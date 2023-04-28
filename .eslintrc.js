@@ -6,17 +6,17 @@ module.exports = {
     node: true,
     mocha: true, // 解决 describe 报错问题
   },
-  extends: 'eslint:recommended',
+  extends: "eslint:recommended",
   overrides: [],
   parserOptions: {
     // 希望支持的js语法
-    ecmaVersion: 'latest', // js 支持版本
+    ecmaVersion: "latest", // js 支持版本
     // ecmaVersion: 6,
-    sourceType: 'module',
+    sourceType: "module",
   },
   rules: {
-    'no-prototype-builtins': 0,
-    'no-unused-vars': 0,
-    quotes: 2,
+    "no-prototype-builtins": 0,
+    "no-unused-vars": 0,
+    quotes: 0,
   },
 };
