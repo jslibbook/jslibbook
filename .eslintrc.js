@@ -6,9 +6,9 @@ module.exports = {
     node: true,
     mocha: true, // 解决 describe 报错问题
   },
-  extends: ['eslint:recommended'],
-  // extends: ['eslint:recommended', 'plugin:prettier/recommended'],
-  // extends: ['eslint:recommended', 'prettier'],
+  // extends: ['eslint:recommended'],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'], // 方案2
+  // extends: ['eslint:recommended', 'prettier'], // 方案1
   overrides: [],
   parserOptions: {
     // 希望支持的js语法
@@ -16,9 +16,9 @@ module.exports = {
     // ecmaVersion: 6,
     sourceType: 'module',
   },
-  plugins: ['prettier'],
+  // plugins: ['prettier'], // 方案1
   rules: {
-    'prettier/prettier': 2, // 'error',
+    // 'prettier/prettier': 2, // 'error', // 方案1
     'no-prototype-builtins': 0,
     'no-unused-vars': 0,
     quotes: 2,

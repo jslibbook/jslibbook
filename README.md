@@ -183,25 +183,41 @@ a: 0,
 eslint 对 Prettier 的代码风格进行检查，如果发现不符合 Prettier 代码风格的地方聚会报错，其余阿里时先使用 Prettier 对代码进行格式化，然后与格式化之前的代码惊醒对比，如果发现不一致，就会报错
 即标记 Prettier 中的错误
 
+```typescript
+{
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": 2 // 'error',
+  }
+}
+```
+
+##### eslint-config-prettier
+
+// eslint-config-plugin 这个插件是啥
+
+将 ESLint 和 Prettier 中冲突的规则都关闭，因为保存的时候会用 Prettier 去格式化代码，所以实际上用的是 Prettier 的规则
+
 配置一
 
-````json
+````typescript
 {
   "plugins": ["prettier"],
   "extends": [
     "eslint:recommended",
     "prettier"
-  ]
+  ],
   "rules": {
     "prettier/prettier": 2 // 'error',
   }
 }
+```
 配置二
-```json
+```typescript
 {
-  extends: [
-    'eslint:recommended',
-    'plugin:prettier/recommended'
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
   ],
 }
 ````
