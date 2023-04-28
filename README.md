@@ -183,7 +183,10 @@ a: 0,
 eslint 对 Prettier 的代码风格进行检查，如果发现不符合 Prettier 代码风格的地方聚会报错，其余阿里时先使用 Prettier 对代码进行格式化，然后与格式化之前的代码惊醒对比，如果发现不一致，就会报错
 即标记 Prettier 中的错误
 
-"eslint-plugin-prettier": "^4.2.1" 需要配合 3.0.0 及以上的版本 "prettier": "3.0.0-alpha.11",但"pretty-quick": "^3.1.3" 不能在prettier中使用
+~~"eslint-plugin-prettier": "^4.2.1" 需要配合 3.0.0 及以上的版本 "prettier": "3.0.0-alpha.11",但"pretty-quick": "^3.1.3" 不能在 prettier 中使用~~
+
+需要切换回 2.x.x 的 prettier 版本
+eslint-plugin-prettier:
 
 ```typescript
 {
