@@ -178,6 +178,30 @@ a: 0,
 
 使用 eslint-plugin-prettier 或 eslint-config-prettier
 
+##### eslint-plugin-prettier
+
+eslint 对 Prettier 的代码风格进行检查，如果发现不符合 Prettier 代码风格的地方聚会报错，其余阿里时先使用 Prettier 对代码进行格式化，然后与格式化之前的代码惊醒对比，如果发现不一致，就会报错
+即标记 Prettier 中的错误
+
+配置一
+
+````json
+{
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": 2 // 'error',
+  }
+}
+配置二
+```json
+{
+  extends: [
+    'eslint:recomendend',
+    'plugin:prettier/recommonended'
+  ]
+}
+````
+
 #### 文章
 
 [一文读懂 eslint 和 prettier](https://blog.csdn.net/weixin_43664308/article/details/128717523)
