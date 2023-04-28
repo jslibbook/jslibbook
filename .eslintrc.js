@@ -7,7 +7,7 @@ module.exports = {
     mocha: true, // 解决 describe 报错问题
   },
   // extends: ['eslint:recommended'],
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'], // 方案2
+  extends: ['eslint:recommended', 'plugin:prettier/recommended', 'prettier'], // 方案2
   // extends: ['eslint:recommended', 'prettier'], // 方案1
   overrides: [],
   parserOptions: {
@@ -22,5 +22,6 @@ module.exports = {
     'no-prototype-builtins': 0,
     'no-unused-vars': 0,
     quotes: 2,
+    indent: 'off', // 是否显示 Prettier 与 ESLint 冲突
   },
 };
