@@ -140,6 +140,8 @@ export default clone 和 export function clone 缺失测试覆盖率就为 0 了
 
 ### 代码风格
 
+[搞懂 ESLint 和 Prettier](https://zhuanlan.zhihu.com/p/80574300)
+
 #### prettier
 
 格式化代码
@@ -173,8 +175,8 @@ a: 0,
 [ESLint Rules 规则配置说明](https://blog.51cto.com/u_15812097/5723258)
 
 #### 解决 prettier 和 eslint 规则冲突
-使用 eslint-plugin-prettier 或 eslint-config-prettier
 
+使用 eslint-plugin-prettier 或 eslint-config-prettier
 
 #### 文章
 
@@ -182,5 +184,4 @@ a: 0,
 
 > eslint: 提供一个插件化的 javascript 代码检测工具，他是一个检测工具，包含 js 语法以及少部分格式问题，在 eslint 看来，语法对了就能保证代码正常允许，格式问题属于其次
 > prettier: 一个“有态度”的代码格式化工具，支持多种语言
-> [全面搞懂 ESLint 与 Prettier](https://blog.csdn.net/jayccx/article/details/128851057)
-> [前端规范：eslint 与 prettier 使用](https://blog.csdn.net/weixin_45077178/article/details/107226551)
+> [全面搞懂 ESLint 与 Prettier](https://blog.csdn.net/jayccx/article/details/128851057) > [前端规范：eslint 与 prettier 使用](https://blog.csdn.net/weixin_45077178/article/details/107226551)
