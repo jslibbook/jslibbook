@@ -21,8 +21,8 @@
     "prettier": "prettier --check src test",
     "prettier:fix": "prettier --write src test",
     "prepare": "husky install",
-    "lint": "npx eslint src test",
-    "lint:fix": "npx eslint src test --fix"
+    "lint": "eslint .js,.jsx,.ts,.tsx",
+    "lint:fix": "npx eslint src --fix"
   },
   "keywords": [],
   "author": "",

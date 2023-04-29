@@ -117,7 +117,7 @@ export function clone(source) {
 ```typescript
 export const clone = (source) => {
   // ...
-};
+}
 ```
 
 这种也不行
@@ -228,6 +228,12 @@ eslint-plugin-prettier:
 ````
 
 [indent](https://eslint.org/docs/latest/rules/indent)
+[semi](https://eslint.org/docs/latest/rules/semi)
+
+##### 理想态
+
+将 ESLint 冲突的规则传递给 Prettier，在保存的时候格式化
+遇到一些问题，目前看还是只用 ESLint 就行了，能避免一些冲突
 
 #### 文章
 
@@ -236,4 +242,6 @@ eslint-plugin-prettier:
 
 > eslint: 提供一个插件化的 javascript 代码检测工具，他是一个检测工具，包含 js 语法以及少部分格式问题，在 eslint 看来，语法对了就能保证代码正常允许，格式问题属于其次
 > prettier: 一个“有态度”的代码格式化工具，支持多种语言
-> [全面搞懂 ESLint 与 Prettier](https://blog.csdn.net/jayccx/article/details/128851057) > [前端规范：eslint 与 prettier 使用](https://blog.csdn.net/weixin_45077178/article/details/107226551)
+> [全面搞懂 ESLint 与 Prettier](https://blog.csdn.net/jayccx/article/details/128851057)
+
+> [前端规范：eslint 与 prettier 使用](https://blog.csdn.net/weixin_45077178/article/details/107226551)
