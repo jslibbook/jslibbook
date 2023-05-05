@@ -1,27 +1,27 @@
 function type(data) {
-  return Object.prototype.toString.call(data).slice(8, -1).toLowerCase();
+  return Object.prototype.toString.call(data).slice(8, -1).toLowerCase()
 }
 
 function clone(source) {
-  const t = type(source);
+  const t = type(source)
   if (t !== 'object' && t !== 'array') {
-    return source;
+    return source
   }
-  let target;
+  let target
   if (t === 'object') {
-    target = {};
+    target = {}
     for (let i in source) {
       if (source.hasOwnProperty(i)) {
-        target[i] = clone(source[i]); // 递归复制
+        target[i] = clone(source[i]) // 递归复制
       }
     }
   } else {
-    target = [];
+    target = []
     for (let i = 0; i < source.length; i++) {
-      target[i] = clone(source[i]); // 递归复制
+      target[i] = clone(source[i]) // 递归复制
     }
   }
-  return target;
+  return target
 }
 
-module.exports = clone;
+module.exports = clone

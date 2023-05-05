@@ -7,8 +7,8 @@ module.exports = {
     mocha: true, // 解决 describe 报错问题
   },
   // extends: ['eslint:recommended'],
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'], // 方案2
-  // extends: ['eslint:recommended', 'prettier'], // 方案1
+  // extends: ['eslint:recommended', 'plugin:prettier/recommended'], // 方案2
+  extends: ['eslint:recommended', 'prettier'], // 方案1
   overrides: [],
   parserOptions: {
     // 希望支持的js语法
@@ -16,14 +16,14 @@ module.exports = {
     // ecmaVersion: 6,
     sourceType: 'module',
   },
-  // plugins: ['prettier'], // 方案1
+  plugins: ['prettier'], // 方案1
   rules: {
-    // 'prettier/prettier': 2, // 'error', // 方案1
+    'prettier/prettier': 2, // 'error', // 方案1
     'no-prototype-builtins': 0,
     'no-unused-vars': 0,
     quotes: 0,
     'no-unexpected-multiline': 2,
-    semi: [2, 'never'],
+    semi: 'error',
     indent: ['error', 2],
   },
-};
+}
